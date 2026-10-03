@@ -1,0 +1,830 @@
+/* =========================================================
+   HOTEL BOOKING - OTP VERIFICATION PAGE
+   =========================================================
+   Responsive:
+   320px  -> Small Mobile
+   360px  -> Mobile
+   480px  -> Large Mobile
+   768px  -> Tablet
+   1024px -> Laptop
+   1200px -> Desktop
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.otp-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef4ff 0%,
+      #f8fafc 50%,
+      #fff7ed 100%
+    );
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   OTP CARD
+   ========================================================= */
+
+.otp-card {
+  width: 100%;
+  max-width: 470px;
+
+  background: #ffffff;
+
+  padding: 40px 38px;
+
+  border-radius: 22px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.10),
+    0 5px 15px rgba(15, 23, 42, 0.05);
+}
+
+
+/* =========================================================
+   HOTEL LOGO
+   ========================================================= */
+
+.otp-logo {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: #ffffff;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.otp-card h1 {
+  text-align: center;
+
+  color: #111827;
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.5px;
+
+  margin-bottom: 9px;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.otp-subtitle {
+  max-width: 390px;
+
+  margin: 0 auto 24px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   INFORMATION BOX
+   ========================================================= */
+
+.otp-info {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 14px;
+
+  margin-bottom: 24px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 11px;
+}
+
+
+/* =========================================================
+   INFORMATION ICON
+   ========================================================= */
+
+.otp-info > span {
+  flex-shrink: 0;
+
+  font-size: 19px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   INFORMATION TEXT
+   ========================================================= */
+
+.otp-info p {
+  color: #6b7280;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.otp-card form {
+  width: 100%;
+}
+
+
+/* =========================================================
+   OTP INPUT GROUP
+   ========================================================= */
+
+.otp-input-group {
+  width: 100%;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.otp-input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   OTP INPUT
+   ========================================================= */
+
+.otp-input-group input {
+  width: 100%;
+
+  height: 56px;
+
+  padding: 0 16px;
+
+  border: 1.5px solid #d1d5db;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  letter-spacing: 8px;
+
+  text-align: center;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* =========================================================
+   OTP PLACEHOLDER
+   ========================================================= */
+
+.otp-input-group input::placeholder {
+  color: #9ca3af;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  letter-spacing: normal;
+}
+
+
+/* =========================================================
+   OTP INPUT HOVER
+   ========================================================= */
+
+.otp-input-group input:hover {
+  border-color: #9ca3af;
+}
+
+
+/* =========================================================
+   OTP INPUT FOCUS
+   ========================================================= */
+
+.otp-input-group input:focus {
+  border-color: #2563eb;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   DISABLED OTP INPUT
+   ========================================================= */
+
+.otp-input-group input:disabled {
+  background: #f3f4f6;
+
+  color: #6b7280;
+
+  cursor: not-allowed;
+
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   OTP HINT
+   ========================================================= */
+
+.otp-hint {
+  margin-top: 7px;
+
+  color: #9ca3af;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.otp-message {
+  width: 100%;
+
+  padding: 11px 13px;
+
+  margin-bottom: 17px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+.otp-success {
+  color: #047857;
+
+  background: #ecfdf5;
+
+  border: 1px solid #a7f3d0;
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+   ========================================================= */
+
+.otp-error {
+  color: #b91c1c;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+}
+
+
+/* =========================================================
+   VERIFY BUTTON
+   ========================================================= */
+
+.otp-verify-button {
+  width: 100%;
+
+  height: 52px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* =========================================================
+   VERIFY BUTTON HOVER
+   ========================================================= */
+
+.otp-verify-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 12px 25px rgba(37, 99, 235, 0.28);
+}
+
+
+/* =========================================================
+   VERIFY BUTTON ACTIVE
+   ========================================================= */
+
+.otp-verify-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   VERIFY BUTTON DISABLED
+   ========================================================= */
+
+.otp-verify-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   BACK TO LOGIN
+   ========================================================= */
+
+.back-login-button {
+  display: block;
+
+  margin: 22px auto 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 5px 8px;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* =========================================================
+   BACK BUTTON HOVER
+   ========================================================= */
+
+.back-login-button:hover {
+  color: #1d4ed8;
+
+  background: #eff6ff;
+
+  border-radius: 7px;
+}
+
+
+/* =========================================================
+   BACK BUTTON DISABLED
+   ========================================================= */
+
+.back-login-button:disabled {
+  color: #9ca3af;
+
+  cursor: not-allowed;
+
+  background: transparent;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.otp-demo {
+  text-align: center;
+
+  margin-top: 24px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.otp-verify-button:focus-visible,
+.back-login-button:focus-visible,
+.otp-input-group input:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   MOBILE - 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .otp-page {
+    min-height: 100vh;
+
+    padding: 20px 14px;
+  }
+
+  .otp-card {
+    max-width: 100%;
+
+    padding: 29px 21px;
+
+    border-radius: 18px;
+  }
+
+  .otp-logo {
+    width: 63px;
+    height: 63px;
+
+    font-size: 29px;
+
+    border-radius: 17px;
+
+    margin-bottom: 15px;
+  }
+
+  .otp-card h1 {
+    font-size: 24px;
+  }
+
+  .otp-subtitle {
+    font-size: 13px;
+
+    margin-bottom: 21px;
+  }
+
+  .otp-info {
+    padding: 12px;
+
+    margin-bottom: 21px;
+  }
+
+  .otp-info p {
+    font-size: 11px;
+  }
+
+  .otp-input-group label {
+    font-size: 13px;
+  }
+
+  .otp-input-group input {
+    height: 52px;
+
+    font-size: 20px;
+
+    letter-spacing: 7px;
+  }
+
+  .otp-input-group input::placeholder {
+    font-size: 13px;
+  }
+
+  .otp-verify-button {
+    height: 50px;
+
+    font-size: 14px;
+  }
+
+  .back-login-button {
+    margin-top: 19px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .otp-page {
+    padding: 14px 9px;
+  }
+
+  .otp-card {
+    padding: 24px 16px;
+
+    border-radius: 15px;
+  }
+
+  .otp-logo {
+    width: 56px;
+    height: 56px;
+
+    font-size: 26px;
+
+    border-radius: 15px;
+  }
+
+  .otp-card h1 {
+    font-size: 21px;
+
+    letter-spacing: -0.2px;
+  }
+
+  .otp-subtitle {
+    font-size: 12px;
+
+    margin-bottom: 18px;
+  }
+
+  .otp-info {
+    gap: 7px;
+
+    padding: 10px;
+
+    margin-bottom: 18px;
+
+    border-radius: 9px;
+  }
+
+  .otp-info > span {
+    font-size: 16px;
+  }
+
+  .otp-info p {
+    font-size: 10px;
+
+    line-height: 1.5;
+  }
+
+  .otp-input-group {
+    margin-bottom: 15px;
+  }
+
+  .otp-input-group label {
+    font-size: 12px;
+
+    margin-bottom: 6px;
+  }
+
+  .otp-input-group input {
+    height: 48px;
+
+    padding: 0 10px;
+
+    font-size: 18px;
+
+    letter-spacing: 6px;
+
+    border-radius: 9px;
+  }
+
+  .otp-input-group input::placeholder {
+    font-size: 11px;
+  }
+
+  .otp-hint {
+    font-size: 10px;
+
+    margin-top: 5px;
+  }
+
+  .otp-message {
+    padding: 9px 10px;
+
+    margin-bottom: 14px;
+
+    font-size: 11px;
+  }
+
+  .otp-verify-button {
+    height: 48px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+  }
+
+  .back-login-button {
+    margin-top: 16px;
+
+    font-size: 12px;
+  }
+
+  .otp-demo {
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   TABLET - 768px
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .otp-page {
+    padding: 50px 25px;
+  }
+
+  .otp-card {
+    max-width: 490px;
+
+    padding: 42px 40px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP - 1024px
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+  .otp-page {
+    padding: 55px 30px;
+  }
+
+  .otp-card {
+    max-width: 500px;
+
+    padding: 44px 42px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP - 1200px
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .otp-page {
+    padding: 60px 30px;
+  }
+
+  .otp-card {
+    max-width: 510px;
+
+    padding: 46px 44px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    scroll-behavior: auto !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

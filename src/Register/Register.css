@@ -1,0 +1,858 @@
+/* =========================================================
+   HOTEL BOOKING - SIGNUP / REGISTER PAGE
+   =========================================================
+   Responsive:
+   320px  -> Small Mobile
+   360px  -> Mobile
+   480px  -> Large Mobile
+   768px  -> Tablet
+   1024px -> Laptop
+   1200px -> Desktop
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.signup-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef4ff 0%,
+      #f8fafc 50%,
+      #fff7ed 100%
+    );
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   SIGNUP CARD
+   ========================================================= */
+
+.signup-card {
+  width: 100%;
+  max-width: 480px;
+
+  background: #ffffff;
+
+  padding: 38px 38px;
+
+  border-radius: 22px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.10),
+    0 5px 15px rgba(15, 23, 42, 0.05);
+}
+
+
+/* =========================================================
+   HOTEL LOGO
+   ========================================================= */
+
+.signup-logo {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 17px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: #ffffff;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.signup-card h1 {
+  text-align: center;
+
+  color: #111827;
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.5px;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.signup-subtitle {
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.signup-card form {
+  width: 100%;
+}
+
+
+/* =========================================================
+   INPUT GROUP
+   ========================================================= */
+
+.signup-input-group {
+  width: 100%;
+
+  margin-bottom: 19px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.signup-input-group label {
+  display: block;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.signup-input-group input {
+  width: 100%;
+
+  height: 50px;
+
+  padding: 0 15px;
+
+  border: 1.5px solid #d1d5db;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.signup-input-group input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================================================
+   INPUT HOVER
+   ========================================================= */
+
+.signup-input-group input:hover {
+  border-color: #9ca3af;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+   ========================================================= */
+
+.signup-input-group input:focus {
+  border-color: #2563eb;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   DISABLED INPUT
+   ========================================================= */
+
+.signup-input-group input:disabled {
+  background: #f3f4f6;
+
+  color: #6b7280;
+
+  cursor: not-allowed;
+
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   PASSWORD WRAPPER
+   ========================================================= */
+
+.password-wrapper {
+  width: 100%;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   PASSWORD INPUT
+   ========================================================= */
+
+.password-wrapper input {
+  padding-right: 52px;
+}
+
+
+/* =========================================================
+   EYE BUTTON
+   ========================================================= */
+
+.eye-button {
+  position: absolute;
+
+  right: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  border-radius: 8px;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =========================================================
+   EYE BUTTON HOVER
+   ========================================================= */
+
+.eye-button:hover {
+  background: #f3f4f6;
+}
+
+
+/* =========================================================
+   EYE BUTTON ACTIVE
+   ========================================================= */
+
+.eye-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+
+/* =========================================================
+   EYE BUTTON DISABLED
+   ========================================================= */
+
+.eye-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   PASSWORD HINT
+   ========================================================= */
+
+.password-hint {
+  margin-top: 7px;
+
+  color: #6b7280;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   CREATE ACCOUNT BUTTON
+   ========================================================= */
+
+.signup-button {
+  width: 100%;
+
+  height: 52px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+   ========================================================= */
+
+.signup-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 12px 25px rgba(37, 99, 235, 0.28);
+}
+
+
+/* =========================================================
+   BUTTON ACTIVE
+   ========================================================= */
+
+.signup-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   BUTTON DISABLED
+   ========================================================= */
+
+.signup-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   LOGIN SECTION
+   ========================================================= */
+
+.signup-login {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 24px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   LOGIN TEXT
+   ========================================================= */
+
+.signup-login span {
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.signup-login button {
+  border: none;
+
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON HOVER
+   ========================================================= */
+
+.signup-login button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   HOTEL INFORMATION BOX
+   ========================================================= */
+
+.signup-info {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-top: 22px;
+
+  padding: 14px;
+
+  border-radius: 11px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   INFO ICON
+   ========================================================= */
+
+.signup-info > span {
+  flex-shrink: 0;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   INFO TEXT
+   ========================================================= */
+
+.signup-info p {
+  color: #6b7280;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.signup-demo {
+  text-align: center;
+
+  margin-top: 22px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOCUS ACCESSIBILITY
+   ========================================================= */
+
+.signup-button:focus-visible,
+.signup-login button:focus-visible,
+.eye-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   MOBILE - 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .signup-page {
+    min-height: 100vh;
+
+    padding: 20px 14px;
+  }
+
+  .signup-card {
+    max-width: 100%;
+
+    padding: 29px 21px;
+
+    border-radius: 18px;
+  }
+
+  .signup-logo {
+    width: 63px;
+    height: 63px;
+
+    font-size: 29px;
+
+    border-radius: 17px;
+
+    margin-bottom: 14px;
+  }
+
+  .signup-card h1 {
+    font-size: 24px;
+  }
+
+  .signup-subtitle {
+    font-size: 13px;
+
+    margin-bottom: 24px;
+  }
+
+  .signup-input-group {
+    margin-bottom: 17px;
+  }
+
+  .signup-input-group label {
+    font-size: 13px;
+  }
+
+  .signup-input-group input {
+    height: 48px;
+
+    font-size: 14px;
+  }
+
+  .signup-button {
+    height: 50px;
+
+    font-size: 14px;
+  }
+
+  .signup-login {
+    margin-top: 21px;
+
+    padding-top: 19px;
+  }
+
+  .signup-info {
+    margin-top: 19px;
+
+    padding: 12px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .signup-page {
+    padding: 14px 9px;
+  }
+
+  .signup-card {
+    padding: 24px 16px;
+
+    border-radius: 15px;
+  }
+
+  .signup-logo {
+    width: 56px;
+    height: 56px;
+
+    font-size: 26px;
+
+    border-radius: 15px;
+  }
+
+  .signup-card h1 {
+    font-size: 21px;
+
+    letter-spacing: -0.2px;
+  }
+
+  .signup-subtitle {
+    font-size: 12px;
+
+    margin-bottom: 21px;
+  }
+
+  .signup-input-group {
+    margin-bottom: 15px;
+  }
+
+  .signup-input-group label {
+    font-size: 12px;
+
+    margin-bottom: 6px;
+  }
+
+  .signup-input-group input {
+    height: 46px;
+
+    padding-left: 12px;
+
+    padding-right: 46px;
+
+    font-size: 13px;
+
+    border-radius: 9px;
+  }
+
+  .eye-button {
+    right: 8px;
+
+    width: 32px;
+    height: 32px;
+
+    font-size: 15px;
+  }
+
+  .password-hint {
+    font-size: 10px;
+
+    margin-top: 5px;
+  }
+
+  .signup-button {
+    height: 48px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+  }
+
+  .signup-login {
+    gap: 5px;
+
+    margin-top: 18px;
+
+    padding-top: 17px;
+  }
+
+  .signup-login span,
+  .signup-login button {
+    font-size: 12px;
+  }
+
+  .signup-info {
+    gap: 8px;
+
+    margin-top: 17px;
+
+    padding: 10px;
+
+    border-radius: 9px;
+  }
+
+  .signup-info > span {
+    font-size: 16px;
+  }
+
+  .signup-info p {
+    font-size: 10px;
+
+    line-height: 1.5;
+  }
+
+  .signup-demo {
+    margin-top: 17px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   TABLET - 768px
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .signup-page {
+    padding: 50px 25px;
+  }
+
+  .signup-card {
+    max-width: 490px;
+
+    padding: 42px 40px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP - 1024px
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+  .signup-page {
+    padding: 55px 30px;
+  }
+
+  .signup-card {
+    max-width: 500px;
+
+    padding: 44px 42px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP - 1200px
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .signup-page {
+    padding: 60px 30px;
+  }
+
+  .signup-card {
+    max-width: 510px;
+
+    padding: 46px 44px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    scroll-behavior: auto !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
