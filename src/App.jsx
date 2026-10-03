@@ -7,9 +7,9 @@ import Footer from "./Componets/Footer";
 
 import Home from "./Pages/Home";
 
-import Allrooms from "./pages/Allrooms";
-import RoomDetials from "./pages/RoomDetials";
-import MyBooking from "./pages/Mybooking";
+import Allrooms from "./Pages/Allrooms";
+import RoomDetials from "./Pages/RoomDetials";
+import MyBooking from "./Pages/Mybooking";
 import HotelReg from "./Componets/HotelReg";
 
 import Layout from "./Pages/HotelOwner/Layout";
