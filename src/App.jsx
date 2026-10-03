@@ -9,7 +9,7 @@ import Home from "./Pages/Home";
 
 import Allrooms from "./pages/Allrooms";
 import RoomDetials from "./pages/RoomDetials";
-import MyBooking from "./pages/MyBooking";
+import MyBooking from "./pages/Mybooking";
 import HotelReg from "./Componets/HotelReg";
 
 import Layout from "./Pages/HotelOwner/Layout";
