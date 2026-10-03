@@ -5,7 +5,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Nav from "./Componets/Nav";
 import Footer from "./Componets/Footer";
 
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
+
 import Allrooms from "./pages/Allrooms";
 import RoomDetials from "./pages/RoomDetials";
 import MyBooking from "./pages/MyBooking";
